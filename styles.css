@@ -2,22 +2,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFEBEB; /* Светлый фон для контраста с алым */
+    background-color: #000000; /* Чорний фон */
+    color: white; /* Білий текст для кращої читабельності */
 }
 
 header {
-    background-color: #FF2400; /* Алый цвет для заголовка */
+    background-color: #FF0000; /* Яскраво червоний колір для заголовка */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 nav {
-    background-color: #FF2400; /* Алый фон для меню */
+    background-color: #FF0000; /* Червоний фон для меню */
     padding: 15px;
-    height: 100vh; /* Меню занимает всю высоту страницы */
-    width: 200px; /* Фиксированная ширина для вертикального меню */
-    position: fixed; /* Меню закреплено слева */
+    height: 100vh; /* Меню займає всю висоту сторінки */
+    width: 250px; /* Фіксована ширина для вертикального меню */
+    position: fixed; /* Меню закріплене ліворуч */
     top: 0;
     left: 0;
 }
@@ -36,29 +37,46 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     display: block;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
-    border: 2px solid white; /* Рамка вокруг каждого элемента */
-    transition: background-color 0.3s ease;
+    background-color: #FF0000; /* Червоні квадратні панельки */
+    border: 2px solid #FFFFFF; /* Біла рамка для контрасту */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 0; /* Квадратні кути */
 }
 
 nav ul li a:hover {
-    background-color: white; /* Эффект при наведении */
-    color: #FF2400; /* Изменение цвета текста на алый */
+    background-color: white; /* Ефект при наведенні */
+    color: #FF0000; /* Текст стає червоним при наведенні */
 }
 
 main {
-    margin-left: 220px; /* Отступ для контента, чтобы не накладываться на меню */
+    margin-left: 270px; /* Відступ для контенту, щоб не накладатися на меню */
     padding: 20px;
+    background-color: #333333; /* Темно-сірий фон для контенту */
+    color: white;
+    min-height: 100vh; /* Контент займає всю висоту сторінки */
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #FF2400;
+    background-color: #FF0000;
     color: white;
     position: fixed;
     bottom: 0;
-    width: calc(100% - 220px); /* Учитываем ширину меню */
-    left: 220px;
+    width: calc(100% - 270px); /* Врахування ширини меню */
+    left: 270px;
+}
+
+h2 {
+    color: #FF0000; /* Заголовки червоного кольору */
+}
+
+ul li {
+    background-color: #444444; /* Квадратні панельки для елементів списку */
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #FF0000; /* Червона рамка */
+    border-radius: 0; /* Квадратні кути */
 }
