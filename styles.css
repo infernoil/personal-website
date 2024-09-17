@@ -2,41 +2,63 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #FFEBEB; /* Светлый фон для контраста с алым */
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #FF2400; /* Алый цвет для заголовка */
     color: white;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
+}
+
+nav {
+    background-color: #FF2400; /* Алый фон для меню */
+    padding: 15px;
+    height: 100vh; /* Меню занимает всю высоту страницы */
+    width: 200px; /* Фиксированная ширина для вертикального меню */
+    position: fixed; /* Меню закреплено слева */
+    top: 0;
+    left: 0;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-bottom: 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white; /* Рамка вокруг каждого элемента */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: white; /* Эффект при наведении */
+    color: #FF2400; /* Изменение цвета текста на алый */
 }
 
 main {
+    margin-left: 220px; /* Отступ для контента, чтобы не накладываться на меню */
     padding: 20px;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #FF2400;
     color: white;
     position: fixed;
-    width: 100%;
     bottom: 0;
+    width: calc(100% - 220px); /* Учитываем ширину меню */
+    left: 220px;
 }
