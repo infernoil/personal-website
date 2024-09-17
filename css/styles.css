@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Чорний фон */
+    color: white; /* Білий текст для кращої читабельності */
+}
+
+header {
+    background-color: #FF0000; /* Яскраво червоний колір для заголовка */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #FF0000; /* Червоний фон для меню */
+    padding: 15px;
+    height: 100vh; /* Меню займає всю висоту сторінки */
+    width: 250px; /* Фіксована ширина для вертикального меню */
+    position: fixed; /* Меню закріплене ліворуч */
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    background-color: #FF0000; /* Червоні квадратні панельки */
+    border: 2px solid #FFFFFF; /* Біла рамка для контрасту */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 0; /* Квадратні кути */
+}
+
+nav ul li a:hover {
+    background-color: white; /* Ефект при наведенні */
+    color: #FF0000; /* Текст стає червоним при наведенні */
+}
+
+main {
+    margin-left: 270px; /* Відступ для контенту, щоб не накладатися на меню */
+    padding: 20px;
+    background-color: #333333; /* Темно-сірий фон для контенту */
+    color: white;
+    min-height: 100vh; /* Контент займає всю висоту сторінки */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FF0000;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 270px); /* Врахування ширини меню */
+    left: 270px;
+}
+
+h2 {
+    color: #FF0000; /* Заголовки червоного кольору */
+}
+
+ul li {
+    background-color: #444444; /* Квадратні панельки для елементів списку */
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #FF0000; /* Червона рамка */
+    border-radius: 0; /* Квадратні кути */
+}
