@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000000; /* Чорний фон */
-    color: white; /* Білий текст для кращої читабельності */
+    color: white; /* Білий текст для основного контенту */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +39,7 @@ nav ul li a {
     padding: 20px 40px; /* Простір всередині панелі */
     background-color: #000000; /* Чорний фон панелей */
     border: 2px solid #FF0000; /* Червона обводка */
-    color: white;
+    color: white; /* Білий колір тексту на панелях */
     text-decoration: none;
     font-size: 18px;
     text-align: center;
@@ -50,6 +50,16 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #FF0000; /* Червоний фон при наведенні */
     color: #000000; /* Чорний текст при наведенні */
+}
+
+/* Додаємо білий колір для всіх посилань */
+a {
+    color: white; /* Білий колір посилань */
+    text-decoration: none; /* Відключаємо підкреслення для посилань */
+}
+
+a:hover {
+    color: #FF0000; /* Червоний колір посилань при наведенні */
 }
 
 main {
