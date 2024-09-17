@@ -4,79 +4,73 @@ body {
     padding: 0;
     background-color: #000000; /* Чорний фон */
     color: white; /* Білий текст для кращої читабельності */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
-    background-color: #FF0000; /* Яскраво червоний колір для заголовка */
+    background-color: #FF0000; /* Червоний фон для заголовка */
     color: white;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 nav {
-    background-color: #FF0000; /* Червоний фон для меню */
-    padding: 15px;
-    height: 100vh; /* Меню займає всю висоту сторінки */
-    width: 250px; /* Фіксована ширина для вертикального меню */
-    position: fixed; /* Меню закріплене ліворуч */
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: center; /* Вирівнювання навігаційних панелей по центру */
+    margin-top: 20px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    gap: 20px; /* Відстань між елементами */
 }
 
 nav ul li {
-    margin-bottom: 15px;
+    margin: 0;
 }
 
 nav ul li a {
+    display: block;
+    padding: 20px 40px; /* Простір всередині панелі */
+    background-color: #000000; /* Чорний фон панелей */
+    border: 2px solid #FF0000; /* Червона обводка */
     color: white;
     text-decoration: none;
     font-size: 18px;
-    display: block;
-    padding: 15px;
     text-align: center;
-    background-color: #FF0000; /* Червоні квадратні панельки */
-    border: 2px solid #FFFFFF; /* Біла рамка для контрасту */
     transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 0; /* Квадратні кути */
+    border-radius: 0; /* Квадратні панелі */
 }
 
 nav ul li a:hover {
-    background-color: white; /* Ефект при наведенні */
-    color: #FF0000; /* Текст стає червоним при наведенні */
+    background-color: #FF0000; /* Червоний фон при наведенні */
+    color: #000000; /* Чорний текст при наведенні */
 }
 
 main {
-    margin-left: 270px; /* Відступ для контенту, щоб не накладатися на меню */
+    margin-top: 40px;
     padding: 20px;
+    width: 80%;
     background-color: #333333; /* Темно-сірий фон для контенту */
     color: white;
-    min-height: 100vh; /* Контент займає всю висоту сторінки */
+    border: 2px solid #FF0000; /* Червона обводка */
+    border-radius: 0; /* Квадратні кути */
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #FF0000;
     color: white;
-    position: fixed;
-    bottom: 0;
-    width: calc(100% - 270px); /* Врахування ширини меню */
-    left: 270px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
 }
 
 h2 {
     color: #FF0000; /* Заголовки червоного кольору */
-}
-
-ul li {
-    background-color: #444444; /* Квадратні панельки для елементів списку */
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 2px solid #FF0000; /* Червона рамка */
-    border-radius: 0; /* Квадратні кути */
 }
