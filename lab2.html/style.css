@@ -1,0 +1,107 @@
+
+/* Загальні стилі для body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Стилі для навігації */
+nav {
+    background-color: #4CAF50; /* Темно-зелене тло для навігації */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none; /* Скидання стандартних стилів списку */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Відображення пунктів навігації в один ряд */
+    margin-right: 20px; /* Відстань між пунктами навігації */
+}
+
+nav ul li a {
+    text-decoration: none; /* Скидання підкреслення */
+    color: white; /* Білий колір тексту */
+    font-weight: bold; /* Жирний шрифт для посилань */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+/* Стилі для заголовків */
+h1 {
+    color: #4CAF50; /* Зелений колір для заголовка H1 */
+}
+
+h2 {
+    color: #333; /* Темно-сірий для заголовка H2 */
+}
+
+/* Стилі для абзаців */
+p {
+    line-height: 1.6; /* Збільшений міжрядковий інтервал */
+}
+
+/* Стилі для списків */
+ul {
+    margin-top: 10px; /* Відстань між списком та попереднім елементом */
+}
+
+/* Стилі для форм */
+form {
+    margin-top: 20px; /* Відстань перед формою */
+    padding: 10px;
+    background-color: #fff; /* Біле тло для форми */
+    border: 1px solid #ccc; /* Сіра рамка для форми */
+    border-radius: 5px; /* Закруглені кути */
+}
+
+form label {
+    display: block; /* Перенесення міток на новий рядок */
+    margin: 10px 0 5px; /* Відстань між міткою та полем введення */
+}
+
+form input[type="text"], 
+form input[type="email"] {
+    width: 100%; /* Розтягування полів введення на всю ширину */
+    padding: 8px; /* Внутрішнє відступи */
+    margin-bottom: 10px; /* Відстань між полями */
+    border: 1px solid #ccc; /* Сіра рамка для полів введення */
+    border-radius: 4px; /* Закруглені кути */
+}
+
+/* Стилі для чекбоксів */
+form input[type="checkbox"] {
+    margin-right: 5px; /* Відстань між чекбоксом та текстом */
+}
+
+/* Стилі для додаткового розділу */
+.special {
+    font-weight: bold; /* Жирний шрифт для спеціального пункту списку */
+    color: #FF5722; /* Оранжевий колір */
+}
+
+/* Стилі для футера */
+footer {
+    margin-top: 20px; /* Відстань перед футером */
+    padding: 10px;
+    background-color: #333; /* Темно-сірий футер */
+    color: white; /* Білий текст */
+    text-align: center; /* Вирівнювання тексту по центру */
+}
+
+footer a {
+    color: #4CAF50; /* Зелений колір для посилання */
+    text-decoration: none; /* Скидання підкреслення */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
