@@ -1,8 +1,11 @@
 /* Загальні стилі для всього документа */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-image: url('https://kartinki.pics/pics/uploads/posts/2022-08/1661186207_1-kartinkin-net-p-oboi-dark-krasivo-1.jpg'); /* Шлях до зображення */
+    background-size: cover; /* Малюнок охоплює весь екран */
+    background-position: center; /* Центрування малюнка */
+    background-attachment: fixed; /* Фіксація фону при прокрутці */
+    color: #649448;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -14,12 +17,17 @@ h1 {
 
 /* Стилі для форми */
 .registration-form {
-    background-color: #fff;
-    padding: 20px;
+    background-image: url(''); /* Фоновий малюнок для форми */
+    background-size: cover; /* Покриття форми малюнком */
+    background-position: center; /* Центрування малюнка */
+    background-color: rgba(255, 255, 255, 0.9); /* Напівпрозорий білий фон */
+    color: #00796b;
+    padding: 30px;
     margin: 0 auto;
-    border-radius: 8px;
-    max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Закруглені кути */
+    max-width: 450px; /* Ширина форми */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тінь */
+    position: relative;
 }
 
 label {
@@ -43,7 +51,7 @@ select {
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #5eaf4c;
     color: white;
     padding: 10px 15px;
     margin-top: 15px;
