@@ -1,0 +1,79 @@
+/* 1. Виділити перший елемент <li> та надати йому жирний шрифт */
+li:first-of-type {
+    font-weight: bold;
+}
+
+/* 2. Вибрати всі <a>, що є останніми дочірніми елементами і пофарбувати у червоний колір */
+a:last-child {
+    color: red;
+}
+
+/* 3. Вибрати всі disabled <input> і надати їм сірий фоновий колір */
+input:disabled {
+    background-color: gray;
+}
+
+/* 4. Вибрати всі <p>, що є прямими дочірніми елементами <div> і надати жирний шрифт */
+div > p {
+    font-weight: bold;
+}
+
+/* 5. Вибрати всі елементи з href, що починаються з https і пофарбувати їх у зелений колір */
+a[href^="https"] {
+    color: green;
+}
+
+/* 6. Вибрати всі input[type="text"] і надати їм рамку 1px суцільним синім кольором */
+input[type="text"] {
+    border: 1px solid blue;
+}
+
+/* 7. Вибрати всі <li>, що є першим або останнім елементом і встановити шрифт 24px */
+li:first-child, li:last-child {
+    font-size: 24px;
+}
+
+/* 8. Вибрати всі <p>, що є нащадками <div> і встановити шрифт 16px */
+div p {
+    font-size: 16px;
+}
+
+/* 9. Вибрати всі input[checked] і надати їм світло-блакитний фон */
+input:checked {
+    background-color: lightblue;
+}
+
+/* 10. Виділити всі <a> в <li> і підкреслити їх */
+li > a {
+    text-decoration: underline;
+}
+
+/* 11. Вибрати всі парні <li> елементи і надати їм жирний шрифт */
+li:nth-child(even) {
+    font-weight: bold;
+}
+
+/* 12. Вибрати всі <input[type="text"]> і якщо вони не disabled, надати їм сірий фон */
+input[type="text"]:not(:disabled) {
+    background-color: lightgray;
+}
+
+/* 13. Вибрати перші <p> елементи їх батьків і встановити шрифт 24px */
+p:first-child {
+    font-size: 24px;
+}
+
+/* 14. Вибрати <li>, що йде після .special і зробити його перечеркнутим */
+.special + li {
+    text-decoration: line-through;
+}
+
+/* 15. Виділити першу літеру кожного <p> і встановити її розмір шрифту 36px */
+p::first-letter {
+    font-size: 36px;
+}
+
+/* 16. Додати для кожного <a> псевдоелемент ::after з вмістом ↗️ */
+a::after {
+    content: ' ↗️';
+}
