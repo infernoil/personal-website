@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181818; /* Черный фон */
+    color: #ffffff; /* Белый текст */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #121212; /* Темно-серый фон для заголовка */
+    padding: 10px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: #ff0000; /* Красный цвет для логотипа YouTube */
+  }
+  
+  .search-bar {
+    display: flex;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    width: 300px;
+    border: 1px solid #333; /* Темный граница для поля поиска */
+    background-color: #282828; /* Темно-серый фон для поля поиска */
+    color: #ffffff; /* Белый текст в поле поиска */
+  }
+  
+  .search-bar button {
+    padding: 5px;
+    background-color: #333; /* Темный фон для кнопки поиска */
+    color: #ffffff; /* Белый текст на кнопке */
+  }
+  
+  .icons span {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #ffffff; /* Белый цвет иконок */
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #121212; /* Темный фон для боковой панели */
+    padding: 10px;
+    border-right: 1px solid #333; /* Темная граница */
+  }
+  
+  .main-menu, .sub-menu, .subscriptions {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .main-menu li, .sub-menu li, .subscriptions li {
+    padding: 10px;
+    cursor: pointer;
+    color: #ffffff; /* Белый текст в боковом меню */
+  }
+  
+  .main-menu li:hover, .sub-menu li:hover, .subscriptions li:hover {
+    background-color: #333; /* Темный фон при наведении */
+  }
+  
+  .content {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .filter-bar {
+    margin-bottom: 20px;
+  }
+  
+  .filter-bar button {
+    margin-right: 10px;
+    background-color: #333; /* Темный фон для кнопок фильтров */
+    color: #ffffff; /* Белый текст на кнопках фильтров */
+  }
+  
+  .video-grid {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам оборачиваться на следующую строку */
+    justify-content: flex-start; /* Выравнивание элементов по левому краю */
+  }
+  
+  .video-card {
+    margin: 10px; /* Отступ между видео-картами */
+    width: calc(25% - 20px); /* Ширина карточки для 4-х в ряд */
+    position: relative; /* Для позиционирования длительности видео */
+    background-color: #282828; /* Темно-серый фон для карточек видео */
+    border-radius: 4px; /* Закругленные углы */
+  }
+  
+  .video-card img {
+    width: 100%; /* Убедитесь, что изображение занимает 100% ширины */
+    border-radius: 4px 4px 0 0; /* Закругление верхних углов изображения */
+  }
+  
+  .video-info {
+    padding: 5px 10px;
+  }
+  
+  .video-title {
+    font-size: 16px;
+    margin: 0;
+    color: #ffffff; /* Белый текст для названия видео */
+  }
+  
+  .video-author {
+    font-size: 14px;
+    color: #bbb; /* Серый цвет для автора */
+  }
+  
+  .video-duration {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+    color: white;
+    padding: 2px 5px;
+    border-radius: 2px;
+  }
+  
