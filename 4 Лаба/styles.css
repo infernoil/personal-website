@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.planner {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px black;
+}
+
+header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header-inputs {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.header-inputs label {
+  font-weight: 700; /* Жирний текст для лейблів */
+}
+
+.header-inputs input {
+  border: 1px solid black;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: 700; /* Жирний текст для чекбоксів */
+}
+
+.sidebar h2 {
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.sidebar ul li input[type="text"] {
+  margin-left: 8px;
+  border: 1px solid black;
+  padding: 5px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  font-weight: 700; /* Жирний текст */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  border-top: 2px solid black;
+  padding-top: 10px;
+}
+
+.day {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 700; /* Жирний текст для днів */
+  height: 150px;
+  text-align: left;
+  box-shadow: 2px 2px 0px black;
+}
+
+.day input {
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .planner {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
